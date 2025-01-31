@@ -10,19 +10,18 @@ html, body {
     width: 100%;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    border: 1px solid black;
     grid-template-columns: 1fr 3fr;
 }
 .top {
     grid-area: 1 / 3 / 3 / 10;
-    border: 2px solid black;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 4fr, 1;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5)
 }
 .search-container-L {
     grid-area: 1 / 1 / 2 / 4;
-    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -32,20 +31,19 @@ html, body {
 .searchbar {
     height: 24px;
     width: 4500px;
-    background-color: rgb(158, 152, 152);
+    background-color: rgb(203, 203, 214);
     border-radius: 12px;
 }
 .search-container-R {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     height: 70px;
     width: 350px;
 }
 .photo {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     border-radius: 100px;
 }
 .user {
@@ -54,23 +52,51 @@ html, body {
     align-items: center;
     height: 70px;
     width: 1000px;
-    border: 1px solid red;
 }
 .top-greeting {
     grid-area: 2 / 1 / 3 / 3;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    height: 70px;
+    width: 800px;
+    background-color: white;
+}
+.photo1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+.top-text-container {
+    grid-column: 2 / 2;
+    grid-row: 1;
+    height: 60px;
+    width: 400px;
     display: flex;
-
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.top-pics {
+    grid-area: 1 / 1 / 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.top-big-text {
+    grid-column: 2 / 2;
+    height: 30px;
+    font-size: 34px;
 }
 .top-button-container {
     grid-area: 2 / 4 / 3 / 5;
     display: flex;
     justify-content: center;
     align-items:end;
-    border: 1px solid black;
     height: 60px;
 }
 .top-button-area {
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,7 +114,6 @@ html, body {
 }
 .sidebar {
     grid-area: 1 / 1 / 11 / 3;
-    border: 2px solid black;
     background-color: rgb(55, 131, 231);
     display: grid;
     grid-template-columns: 1fr;
@@ -155,15 +180,14 @@ html, body {
 }
 .project-container {
     grid-area: 3 / 3 / 11 / 10 ;
-    border: 2px solid red;
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(203, 203, 214);
 }
 .project-header{
     display: flex;
     grid-area: 1 / 1 / 2 / 10;
-    background-color: blue;
     height: 1fr;
     width: 1150px;
     justify-content: space-between;
@@ -174,18 +198,16 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rebeccapurple;
-    font-size: 24px;
+    font-size: 18px;
 
 }
 .project-header-text2 {
     height: 1fr;
-    width: 240px;
+    width: 280px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    background-color: rebeccapurple;
-    font-size: 24px;
+    font-size: 18px;
 }
 .projects {
     grid-area: 2 / 1 / 11 / 4;
@@ -200,4 +222,8 @@ html, body {
     height: 1fr;
     width: 1fr;
     border: 1px solid black;
+    background-color: white;
+    border-left: 6px solid rgb(235, 201, 9);
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(109, 103, 103, 0.5)
 }
