@@ -142,6 +142,10 @@ html, body {
     background-color: rgb(120, 173, 197);
     transition: background-color 0.5s;
 }
+.Dashboard:hover {
+    background-color: rgb(120, 173, 197);
+    transition: background-color 0.5s;
+}
 .sidebar-group1 {
     grid-area: 3 / 1 / 9 / 2;
     display: flex;
@@ -255,4 +259,33 @@ html, body {
     display: flex;
     justify-content: flex-end;
     width: 180px;
+}
+.announcements-area {
+    grid-area: 2 / 4 / 6 / 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(109, 103, 103, 0.5)
+}
+.announcements-header {
+    display: flex;
+    height: 30px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-weight: 600;
+}
+.announcements-text {
+    display: flex;
+    height: 100px;
+    width: 300px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
 }
