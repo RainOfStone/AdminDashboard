@@ -297,9 +297,14 @@ html, body {
     grid-area: 7 / 4 / 11 / 5;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 4px rgba(109, 103, 103, 0.5)
 }
-.trending-item
+.trending-item {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
+}
