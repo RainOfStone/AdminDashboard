@@ -112,7 +112,7 @@ html, body {
     border-radius: 16px;
 }
 .sidebar {
-    grid-area: 1 / 1 / 11 / 3;
+    grid-area: 1 / 1 / 11 / 2;
     background-color: rgb(55, 131, 231);
     display: grid;
     grid-template-columns: 1fr;
@@ -273,14 +273,12 @@ html, body {
     width: 180px;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     font-weight: 600;
 }
 .announcements-text {
     display: flex;
     height: 100px;
     width: 300px;
-    border: 1px solid black;
     flex-wrap: wrap;
     justify-content: start;
     align-items: center;
@@ -305,6 +303,28 @@ html, body {
 .trending-item {
     display: grid;
     justify-content: center;
-    grid-template-columns: 0.4fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-template-rows: 0.2fr 0.4fr, 0.4fr;
+}
+.trending-photo {
+    grid-area: 2 / 1 / 4 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo2 {
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+}
+.trending-text-container {
+    display: flex;
+    height: 60px;
+    width: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.trending-text {
+    color: rgb(139, 139, 141);
 }
